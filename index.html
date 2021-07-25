@@ -3,18 +3,23 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>dev_Arif-Frontend Developer</title>
+	<title>Arif-Front End Developer</title>
 	<meta name="description" content="Bolby - Portfolio/CV/Resume HTML Template">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 
 	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/boxicons.min.css">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
 
@@ -70,7 +75,7 @@
 			<!-- logo image -->
 			<div class="site-logo">
 				<a href="index.html">
-					<h2>Dev_arif<span style="font-size: 30px;color:#21DCFE">.</span></h2>
+					<h2 class="text-center">Arif<span style="font-size: 30px;color:#21DCFE">.</span></h2>
 				</a>
 			</div>
 		</div>
@@ -83,7 +88,7 @@
 		<div class="site-logo">
 			<a href="index.html">
 				<img src="images/avatar-1.svg" alt="Bolby" class="ml-5" />
-				<h2>dev_arif<span style="font-size: 30px;color:#21DCFE">.</span></h2>
+				<h2 class="text-center">Arif<span style="font-size: 30px;color:#21DCFE">.</span></h2>
 			</a>
 		</div>
 
@@ -95,6 +100,7 @@
 				<li><a href="#services"><i class="icon-briefcase"></i>Services</a></li>
 				<li><a href="#experience"><i class="icon-graduation"></i>Experience</a></li>
 				<li><a href="#works"><i class="icon-layers"></i>Works</a></li>
+				<li><a href="#team"><i class="icon-people"></i>Team</a></li>
 				<li><a href="#contact"><i class="icon-bubbles"></i>Contact</a></li>
 			</ul>
 		</nav>
@@ -102,7 +108,7 @@
 		<!-- site footer -->
 
 		<footer class="mt-0" style="color: black;">
-			<p>&copy dev_arif 2021</p>
+			<p>&copy Arif 2020-2021</p>
 		</footer>
 	</header>
 
@@ -119,16 +125,25 @@
 					<img src="images/avatar-1.svg" alt="Bolby" class="mb-4" />
 
 					<!-- info -->
-					<h1 class="mb-2 mt-0">Mohammad Ariful Islam</h1>
-					<span>I'm a <span class="text-rotating">Designer, Developer,Freelancer</span></span>
+					<p class="mb-2 mt-0"><b>Mohammad Ariful Islam</b></p>
+					<!-- Text Spinner -->
+					<!-- <span>I'm a <span class="text-rotating">Designer, Developer,Freelancer</span></span> -->
+					<h2>I'm
+						<span class="typed text-black" data-typed-items="Designer, Developer, Freelancer"></span>
+					</h2>
 
 					<!-- social icons -->
-					<ul class="social-icons light list-inline mb-0 mt-4">
-						<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
+					<ul class="social-icons light list-inline mb-0 mt-4 ml-4">
+						<li data-toggle="tooltip" title="Facebook" class="list-inline-item"><a href="#"><i
+									class="fab fa-facebook-f"></i></a></li>
+						<li data-toggle="tooltip" title="Twitter" class="list-inline-item"><a href="#"><i
+									class="fab fa-twitter"></i></a></li>
+						<li data-toggle="tooltip" title="Linkedin" class="list-inline-item"><a href="#"><i
+									class="fab fa-linkedin-in"></i></a></li>
+						<li data-toggle="tooltip" title="Github" class="list-inline-item"><a href="#"><i
+									class="fab fa-github"></i></a></li>
+						<li data-toggle="tooltip" title="Stackoverflow" class="list-inline-item"><a href="#"><i
+									class="fab fa-stack-overflow"></i></a></li>
 					</ul>
 
 					<!-- buttons -->
@@ -222,7 +237,6 @@
 			</div>
 
 		</section>
-
 		<!-- section about -->
 		<section id="about">
 
@@ -248,50 +262,316 @@
 							<div class="row">
 								<div class="col-md-6">
 									<!-- about text -->
-									
-									<p>Hi, Iam Mohammad Ariful Islam. I'm a professional frontend developer & also
-										work in WordPress.I am already working as a frontend developer in <a
-										href="#" target="_self"><i><b>i2Technologies limited</b></i></a> .
-										My core skill: HTML5,CSS3,JavaScript,Bootstrap,PHP,WordPress.
-										I have already completed over 259+ projects local market.
+									<p>Hi, Iam Mohammad Ariful Islam.I am working as a Front End Developer in <a
+											href="https://i2technologies.net/" class="" target="_blank"><b>i2
+												Technologies
+												Limited</b></a><br>
 										I always like to create something on my own which is helpful for
 										others.
 									</p>
 									<div class="mt-3">
-										<a href="#" class="btn btn-default">Download CV</a>
+										<button type="button" class="btn btn-default" data-toggle="modal"
+											data-target="#exampleModalCenterabout">
+											Read More
+										</button>
+										<!-- Modal -->
+										<div class="modal fade" id="exampleModalCenterabout" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h3 class="modal-title" id="exampleModalLongTitle">About
+															Me</h3>
+														<button type="button" class="close" data-dismiss="modal"
+															aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<!-- Modal Body Star -->
+													<div class="modal-body">
+														<!-- ======= About Section ======= -->
+
+														<div class="row gutters-sm">
+															<div class="col-md-4 mb-3">
+																<div class="card">
+																	<div class="card-body">
+																		<div
+																			class="d-flex flex-column align-items-center text-center">
+																			<img src="images/avatar-2.svg" alt="Admin"
+																				class="rounded-circle" width="170">
+																			<div class="mt-3">
+																				<h4>Mohammad Ariful
+																					Islam</h4>
+																				<p class="text-secondary mb-1">Front End
+																					Developer</p>
+																				<p class="text-muted font-size-sm">i2
+																					Technologies Limited
+																				<ul
+																					class="social-icons light list-inline mb-0 mt-4 ml-4">
+																					<li data-toggle="tooltip"
+																						title="Facebook"
+																						class="list-inline-item"><a
+																							href="#"><i
+																								class="fab fa-facebook-f"></i></a>
+																					</li>
+																					<li data-toggle="tooltip"
+																						title="Twitter"
+																						class="list-inline-item"><a
+																							href="#"><i
+																								class="fab fa-twitter"></i></a>
+																					</li>
+																					<li data-toggle="tooltip"
+																						title="Linkedin"
+																						class="list-inline-item"><a
+																							href="#"><i
+																								class="fab fa-linkedin-in"></i></a>
+																					</li>
+																					<li data-toggle="tooltip"
+																						title="Github"
+																						class="list-inline-item"><a
+																							href="#"><i
+																								class="fab fa-github"></i></a>
+																					</li>
+																					<li data-toggle="tooltip"
+																						title="Stackoverflow"
+																						class="list-inline-item"><a
+																							href="#"><i
+																								class="fab fa-stack-overflow"></i></a>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="mt-3 text-center">
+
+																</div>
+															</div>
+															<div class="col-md-8">
+																<div class="mb-3">
+																	<div class="row">
+																		<div class="col-lg-6">
+																			<ul class="list-group list-group-flush">
+																				<li class="list-group-item"><i
+																						class="fas fa-user"></i>&nbsp;
+																					<strong>Name:</strong> Mohammad
+																					Ariful
+																					Islam
+
+																				</li>
+
+																				<li class="list-group-item"><i
+																						class="fas fa-mail-bulk"></i>&nbsp;
+																					<strong>Email:</strong>
+																					<a href="mailto:mdarifulislam3579@gmail.com"
+																						class="customlink"
+																						target="_blank">
+																						mdarifulislam3579@gmail.com</a>
+																				</li>
+																				<li class="list-group-item"><i
+																						class="fas fa-phone-alt"></i>&nbsp;
+																					<strong>Phone:</strong> <a
+																						href="tel:" class="customlink"
+																						target="_blank">
+																						+880123456789</a>
+																				</li>
+																				<li class="list-group-item"><i
+																						class="fas fa-map-marker-alt"></i>&nbsp;
+																					<strong>City:</strong>
+																					Noakhali,Bangladesh
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="col-lg-6">
+																			<ul class="list-group list-group-flush">
+																				<li class="list-group-item"><i
+																						class="fas fa-user-tie"></i>&nbsp;
+																					<strong>Position:</strong> Front End
+																					Developer
+																				</li>
+																				<li class="list-group-item"><i
+																						class="fas fa-building"></i>&nbsp;
+																					<strong>Company:</strong>
+																					i2Technologies
+																					Limited
+
+																				</li>
+																				<li class="list-group-item">
+																					<i
+																						class="fas fa-globe"></i>&nbsp;<strong>Website:</strong><a
+																						href="https://i2technologies.net/"
+																						class="customlink"
+																						target="_blank">
+																						https://i2technologies.net/</a>
+																				</li>
+																				<li class="list-group-item"><i
+																						class="fas fa-code"></i>&nbsp;
+																					<strong>Project:</strong> 137+
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class=" row gutters-sm">
+																	<div class="col-md-6">
+																		<!-- skill item -->
+																		<div class="skill-item">
+																			<div class="skill-info clearfix">
+																				<h4 class="float-left mb-3 mt-0">HTML
+																				</h4>
+																				<span class="float-right">95%</span>
+																			</div>
+																			<div class="progress">
+																				<div class="progress-bar data-background"
+																					role="progressbar" aria-valuemin="0"
+																					aria-valuemax="100"
+																					aria-valuenow="95"
+																					data-color="#FFD15C">
+																				</div>
+																			</div>
+																			<div class="spacer" data-height="20"></div>
+																		</div>
+
+																		<!-- skill item -->
+																		<div class="skill-item">
+																			<div class="skill-info clearfix">
+																				<h4 class="float-left mb-3 mt-0">CSS
+																				</h4>
+																				<span class="float-right">85%</span>
+																			</div>
+																			<div class="progress">
+																				<div class="progress-bar data-background"
+																					role="progressbar" aria-valuemin="0"
+																					aria-valuemax="100"
+																					aria-valuenow="85"
+																					data-color="#21DCFE">
+																				</div>
+																			</div>
+																			<div class="spacer" data-height="20"></div>
+																		</div>
+
+																		<!-- skill item -->
+
+																		<div class="skill-item">
+																			<div class="skill-info clearfix">
+																				<h4 class="float-left mb-3 mt-0">
+																					Bootstrap
+																				</h4>
+																				<span class="float-right">75%</span>
+																			</div>
+																			<div class="progress">
+																				<div class="progress-bar data-background"
+																					role="progressbar" aria-valuemin="0"
+																					aria-valuemax="100"
+																					aria-valuenow="75"
+																					data-color="#FF4C60">
+																				</div>
+																			</div>
+																			<div class="spacer" data-height="20"></div>
+																		</div>
+
+																	</div>
+																	<div class="col-sm-6 mb-3">
+																		<!-- skill item -->
+
+																		<div class="skill-item">
+																			<div class="skill-info clearfix">
+																				<h4 class="float-left mb-3 mt-0">
+																					JavaScript </h4>
+																				<span class="float-right">45%</span>
+																			</div>
+																			<div class="progress">
+																				<div class="progress-bar data-background"
+																					role="progressbar" aria-valuemin="0"
+																					aria-valuemax="100"
+																					aria-valuenow="45"
+																					data-color="#FF4C60">
+																				</div>
+																			</div>
+																			<div class="spacer" data-height="20"></div>
+																		</div>
+
+																		<!-- skill item -->
+																		<div class="skill-item">
+																			<div class="skill-info clearfix">
+																				<h4 class="float-left mb-3 mt-0">
+																					PHP</h4>
+																				<span class="float-right">30%</span>
+																			</div>
+																			<div class="progress">
+																				<div class="progress-bar data-background"
+																					role="progressbar" aria-valuemin="0"
+																					aria-valuemax="100"
+																					aria-valuenow="30"
+																					data-color="#6C6CE5">
+																				</div>
+																			</div>
+																			<div class="spacer" data-height="20"></div>
+																		</div>
+																		<!-- skill item -->
+																		<div class="skill-item">
+																			<div class="skill-info clearfix">
+																				<h4 class="float-left mb-3 mt-0">
+																					Wordpress</h4>
+																				<span class="float-right">70%</span>
+																			</div>
+																			<div class="progress">
+																				<div class="progress-bar data-background"
+																					role="progressbar" aria-valuemin="0"
+																					aria-valuemax="100"
+																					aria-valuenow="70"
+																					data-color="#FFD15C">
+																				</div>
+																			</div>
+																		</div>
+
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="modal-footer">
+															<button data-toggle="tooltip" title="Close" type="button"
+																class="btn btn-secondary"
+																data-dismiss="modal">Close</button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="spacer d-md-none d-lg-none" data-height="10"></div>
 									</div>
-									<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 								</div>
 								<div class="col-md-6">
 									<!-- skill item -->
 									<div class="skill-item">
 										<div class="skill-info clearfix">
-											<h4 class="float-left mb-3 mt-0">HTML</h4>
+											<h4 class="float-left mb-3 mt-0">HTML & CSS</h4>
 											<span class="float-right">95%</span>
 										</div>
-										<div class="progress">
+										<div class="progress shadow-dark">
 											<div class="progress-bar data-background" role="progressbar"
 												aria-valuemin="0" aria-valuemax="100" aria-valuenow="95"
 												data-color="#FFD15C">
 											</div>
 										</div>
-										<div class="spacer" data-height="20"></div>
+										<div class="spacer" data-height="10"></div>
 									</div>
 
 									<!-- skill item -->
-									<div class="skill-item">
-										<div class="skill-info clearfix">
-											<h4 class="float-left mb-3 mt-0">CSS</h4>
-											<span class="float-right">85%</span>
-										</div>
-										<div class="progress">
-											<div class="progress-bar data-background" role="progressbar"
-												aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"
-												data-color="#21DCFE">
+									<!-- <div class="skill-item">
+											<div class="skill-info clearfix">
+												<h4 class="float-left mb-3 mt-0">CSS</h4>
+												<span class="float-right">85%</span>
 											</div>
-										</div>
-										<div class="spacer" data-height="20"></div>
-									</div>
+											<div class="progress">
+												<div class="progress-bar data-background" role="progressbar"
+													aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"
+													data-color="#21DCFE">
+												</div>
+											</div>
+											<div class="spacer" data-height="20"></div>
+										</div> -->
 
 									<!-- skill item -->
 
@@ -300,28 +580,28 @@
 											<h4 class="float-left mb-3 mt-0">Bootstrap</h4>
 											<span class="float-right">75%</span>
 										</div>
-										<div class="progress">
+										<div class="progress shadow-dark">
 											<div class="progress-bar data-background" role="progressbar"
 												aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"
-												data-color="#FF4C60">
+												data-color="#21DCFE">
 											</div>
 										</div>
-										<div class="spacer" data-height="20"></div>
+										<div class="spacer" data-height="10"></div>
 									</div>
 									<!-- skill item -->
 
 									<div class="skill-item">
 										<div class="skill-info clearfix">
 											<h4 class="float-left mb-3 mt-0">PHP</h4>
-											<span class="float-right">45%</span>
+											<span class="float-right">30%</span>
 										</div>
-										<div class="progress">
+										<div class="progress shadow-dark">
 											<div class="progress-bar data-background" role="progressbar"
-												aria-valuemin="0" aria-valuemax="100" aria-valuenow="45"
+												aria-valuemin="0" aria-valuemax="100" aria-valuenow="30"
 												data-color="#FF4C60">
 											</div>
 										</div>
-										<div class="spacer" data-height="20"></div>
+										<div class="spacer" data-height="10"></div>
 									</div>
 
 									<!-- skill item -->
@@ -330,7 +610,7 @@
 											<h4 class="float-left mb-3 mt-0">Wordpress</h4>
 											<span class="float-right">70%</span>
 										</div>
-										<div class="progress">
+										<div class="progress shadow-dark">
 											<div class="progress-bar data-background" role="progressbar"
 												aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"
 												data-color="#6C6CE5">
@@ -340,8 +620,8 @@
 								</div>
 							</div>
 						</div>
-					</div>
 
+					</div>
 				</div>
 				<!-- row end -->
 
@@ -399,7 +679,6 @@
 				</div>
 
 			</div>
-
 		</section>
 
 		<!-- section services -->
@@ -416,35 +695,32 @@
 
 					<div class="col-md-4">
 						<!-- service box -->
-						<div class="service-box rounded data-background padding-30 text-center text-light shadow-blue"
+						<div class="service-box rounded bg-white padding-30 text-center shadow-blue"
 							data-color="#6C6CE5">
-							<img src="images/service-1.svg" alt="UI/UX design" />
+							<img src="images//blogger-website.svg" alt="UI/UX design" />
 							<h3 class="mb-3 mt-0">Blog Website</h3>
-							<p class="mb-0">Get the best custom WordPress blog website design in 2020 using the best
-								technology. And, I won’t leave you till your satisfaction</p>
+							<p class="mb-0">Get the best WordPress blog website design</p>
 						</div>
 						<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 					</div>
 
 					<div class="col-md-4" data-wow-delay="0.2s">
 						<!-- service box -->
-						<div class="service-box rounded data-background padding-30 text-center shadow-yellow"
-							data-color="#F9D74C">
-							<img src="images/service-2.svg" alt="UI/UX design" />
+						<div class="service-box rounded bg-white padding-30 text-center shadow-yellow"
+							data-color="#6C6CE5">
+							<img src="images/wordpress.svg" alt="UI/UX design" />
 							<h3 class="mb-3 mt-0">WordPress</h3>
-							<p class="mb-0">Get the best custom WordPress website design in 2020 using the best
-								technology. And, I won’t leave you till your satisfaction</p>
+							<p class="mb-0">Get the best custom WordPress website design</p>
 						</div>
 						<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 					</div>
 					<div class="col-md-4" data-wow-delay="0.4s">
 						<!-- service box -->
-						<div class="service-box rounded data-background padding-30 text-center text-light shadow-pink"
-							data-color="#21DCFE">
-							<img src="images/service-3.svg" alt="UI/UX design" />
+						<div class="service-box rounded bg-white padding-30 text-center shadow-pink"
+							data-color="#6C6CE5">
+							<img src="images/woocommerce.svg" alt="UI/UX design" />
 							<h3 class="mb-3 mt-0">E-commerce website</h3>
-							<p class="mb-0">Get the best custom WordPress e-commerce website design in 2020 using the
-								best technology. And, I won’t leave you till your satisfaction</p>
+							<p class="mb-0">Get the best WordPress e-commerce website design</p>
 						</div>
 					</div>
 
@@ -453,24 +729,22 @@
 
 					<div class="col-md-4">
 						<!-- service box -->
-						<div class="service-box rounded data-background padding-30 text-center text-light shadow-blue"
+						<div class="service-box rounded bg-white padding-30 text-center shadow-blue"
 							data-color="#6C6CE5">
-							<img src="images/service-1.svg" alt="UI/UX design" />
+							<img src="images/web-design.svg" alt="UI/UX design" />
 							<h3 class="mb-3 mt-0">PSD to HTML</h3>
-							<p class="mb-0">Get the best raw coding website design in 2020 using the best technology.
-								And, I won’t leave you till your satisfaction</p>
+							<p class="mb-0">Get the best raw coding website design</p>
 						</div>
 						<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 					</div>
 
 					<div class="col-md-4" data-wow-delay="0.2s">
 						<!-- service box -->
-						<div class="service-box rounded data-background padding-30 text-center shadow-yellow"
-							data-color="#F9D74C">
-							<img src="images/service-2.svg" alt="UI/UX design" />
+						<div class="service-box rounded bg-white padding-30 text-center shadow-yellow"
+							data-color="#6C6CE5">
+							<img src="images/profile-website.svg" alt="UI/UX design" />
 							<h3 class="mb-3 mt-0">Personal Portfolio</h3>
-							<p class="mb-0">Get the best custom WordPress personal website design in 2020 using the best
-								technology. And, I won’t leave you till your satisfaction</p>
+							<p class="mb-0">Get the best WordPress personal website design</p>
 						</div>
 						<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 					</div>
@@ -478,18 +752,18 @@
 
 					<div class="col-md-4" data-wow-delay="0.4s">
 						<!-- service box -->
-						<div class="service-box rounded data-background padding-30 text-center text-light shadow-pink"
-							data-color="#21DCFE">
-							<img src="images/service-3.svg" alt="UI/UX design" />
+						<div class="service-box rounded bg-white padding-30 text-center shadow-pink"
+							data-color="#6C6CE5">
+							<img src="images/cross-platform.svg" alt="UI/UX design" />
 							<h3 class="mb-3 mt-0">Any Kind Of Webste</h3>
-							<p class="mb-0">Get the best custom WordPress website design in 2020 using the best
-								technology. And, I won’t leave you till your satisfaction</p>
+							<p class="mb-0">Get the best custom WordPress website design</p>
 						</div>
 					</div>
 				</div>
 
 				<div class="mt-5 text-center">
-					<p class="mb-0">Looking for a custom job? <a href="#contact">Click here</a> to contact me! 👋</p>
+					<p class="mb-0">Looking for a custom Website? <a href="#contact">Click here</a> to contact me! 👋
+					</p>
 				</div>
 
 			</div>
@@ -518,7 +792,7 @@
 								<div class="content">
 									<span class="time">2019 - 2020</span>
 									<h3 class="title">HSC</h3>
-									<p>Group-Science<br>From Noakhalli Govt. College
+									<p>Group-Science<br>From Noakhali Govt. College
 									</p>
 								</div>
 							</div>
@@ -562,7 +836,7 @@
 							<div class="timeline-container wow fadeInUp">
 								<div class="content">
 									<span class="time">2021 - Present</span>
-									<h3 class="title">Front-End Developer</h3>
+									<h3 class="title">Front End Developer</h3>
 									<p>Full-time<br>i2Tecnologies Limited
 									</p>
 								</div>
@@ -572,7 +846,7 @@
 							<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
 								<div class="content">
 									<span class="time">2021 - Present</span>
-									<h3 class="title">Front-End Developer</h3>
+									<h3 class="title">Front End Developer</h3>
 									<p>Upwork
 									</p>
 								</div>
@@ -614,9 +888,9 @@
 				<!-- portfolio filter (desktop) -->
 				<ul class="portfolio-filter list-inline wow fadeInUp">
 					<li class="current list-inline-item" data-filter="*">All</li>
-					<li class="list-inline-item" data-filter=".creative">Raw Coding</li>
-					<li class="list-inline-item" data-filter=".art">Wordpress</li>
-					<li class="list-inline-item" data-filter=".design">E-commerce</li>
+					<li class="list-inline-item" data-filter=".raw">Raw Coding</li>
+					<li class="list-inline-item" data-filter=".wpsite">Wordpress</li>
+					<li class="list-inline-item" data-filter=".ecomsitee">E-commerce</li>
 					<li class="list-inline-item" data-filter=".branding">Others</li>
 				</ul>
 
@@ -636,7 +910,7 @@
 
 
 					<!-- portfolio item -->
-					<div class="col-md-4 col-sm-6 grid-item ecomsitee">
+					<div class="col-md-4 col-sm-6 grid-item wpsite ecomsitee">
 						<a href="#small-dialog" class="work-content">
 							<div class="portfolio-item rounded shadow-dark">
 								<div class="details">
@@ -652,16 +926,14 @@
 						</a>
 						<div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">
 							<img src="images/works/bannatabaya.jpg" alt="Title" />
-							<h2>Guest App Walkthrough Screens</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa
-								semper rutrum. In rhoncus eleifend mi id tempus.</p>
-							<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl
-								lectus eget ligula.</p>
+							<h2>BannatAbaya Project</h2>
+							<p>Banaat Abaya & Hijab is an Islamic clothing brand in Bangladesh. It is founded by Jobyda
+								Khanam.</p>
 							<a href="https://banaatabaya.com/" class="btn btn-default" target="_blank">View Website</a>
 						</div>
 					</div>
 					<!-- portfolio item -->
-					<div class="col-md-4 col-sm-6 grid-item ecomsitee">
+					<div class="col-md-4 col-sm-6 grid-item wpsite ecomsitee">
 						<a href="#small-dialog1" class="work-content">
 							<div class="portfolio-item rounded shadow-dark">
 								<div class="details">
@@ -677,16 +949,14 @@
 						</a>
 						<div id="small-dialog1" class="white-popup zoom-anim-dialog mfp-hide">
 							<img src="images/works/mbazar.jpg"" alt=" Title" />
-							<h2>Guest App Walkthrough Screens</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa
-								semper rutrum. In rhoncus eleifend mi id tempus.</p>
-							<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl
-								lectus eget ligula.</p>
+							<h2>Mbazar Project</h2>
+							<p>MBAZAR.COM IS THE FASHION FOR EVERYONE FOR EVERY OCCASION.Be it simple, trendy, luxurious
+								or casual, traditional or unique, mbazar.com presents you all</p>
 							<a href="http://live.mbazar.com/" class="btn btn-default" target="_blank">View Website</a>
 						</div>
 					</div>
 					<!-- portfolio item -->
-					<div class="col-md-4 col-sm-6 grid-item ecomsitee">
+					<div class="col-md-4 col-sm-6 grid-item wpsite ecomsitee">
 						<a href="#small-dialog2" class="work-content">
 							<div class="portfolio-item rounded shadow-dark">
 								<div class="details">
@@ -702,17 +972,16 @@
 						</a>
 						<div id="small-dialog2" class="white-popup zoom-anim-dialog mfp-hide">
 							<img src="images/works/colomax.jpg"" alt=" Title" />
-							<h2>Guest App Walkthrough Screens</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa
-								semper rutrum. In rhoncus eleifend mi id tempus.</p>
-							<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl
-								lectus eget ligula.</p>
+							<h2>Colormax Project</h2>
+							<p>Colormax Cosmetics are what you need to take a plunge into perfection and breathing life
+								into your dreams. We allow you to accomplish transformations that inspire nothing but
+								awe. Partner with us and color your life to the max with Colormax </p>
 							<a href="http://colormaxcosmetics.com/" class="btn btn-default" target="_blank">View
 								Website</a>
 						</div>
 					</div>
 					<!-- portfolio item -->
-					<div class="col-md-4 col-sm-6 grid-item wordpress branding">
+					<div class="col-md-4 col-sm-6 grid-item wpsite branding">
 						<a href="#small-dialog3" class="work-content">
 							<div class="portfolio-item rounded shadow-dark">
 								<div class="details">
@@ -728,17 +997,16 @@
 						</a>
 						<div id="small-dialog3" class="white-popup zoom-anim-dialog mfp-hide">
 							<img src="images/works/i2technologies.jpg"" alt=" Title" />
-							<h2>Guest App Walkthrough Screens</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa
-								semper rutrum. In rhoncus eleifend mi id tempus.</p>
-							<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl
-								lectus eget ligula.</p>
+							<h2>i2Technologies Project</h2>
+							<p>i2Techonologies Limited is an innovative software company providing customer-friendly
+								software for business application. We develop and also provide software according to
+								user requirement</p>
 							<a href="https://i2technologies.net/" class="btn btn-default" target="_blank">View
 								Website</a>
 						</div>
 					</div>
 					<!-- portfolio item -->
-					<div class="col-md-4 col-sm-6 grid-item wordpress branding">
+					<div class="col-md-4 col-sm-6 grid-item wpsite branding">
 						<a href="#small-dialog4" class="work-content">
 							<div class="portfolio-item rounded shadow-dark">
 								<div class="details">
@@ -754,17 +1022,18 @@
 						</a>
 						<div id="small-dialog4" class="white-popup zoom-anim-dialog mfp-hide">
 							<img src="images/works/i2hosting.jpg"" alt=" Title" />
-							<h2>Guest App Walkthrough Screens</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa
-								semper rutrum. In rhoncus eleifend mi id tempus.</p>
-							<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl
-								lectus eget ligula.</p>
+							<h2>i2Hosting Project</h2>
+							<p>Best web hosting solutions for your business
+								Get your website, email and business online today with i2hosting Solution! We have a
+								multitude of website hosting available. We can help you find the best hosting plan for
+								your business needs. Our premium website hosting plans cater to all sizes of
+								businesses..</p>
 							<a href="https://i2hostingsolution.com/" class="btn btn-default" target="_blank">View
 								Website</a>
 						</div>
 					</div>
 					<!-- portfolio item -->
-					<div class="col-md-4 col-sm-6 grid-item wordpress branding">
+					<div class="col-md-4 col-sm-6 grid-item branding wpsite">
 						<a href="#small-dialog5" class="work-content">
 							<div class="portfolio-item rounded shadow-dark">
 								<div class="details">
@@ -780,78 +1049,250 @@
 						</a>
 						<div id="small-dialog5" class="white-popup zoom-anim-dialog mfp-hide">
 							<img src="images/works/jarinsultana.jpg"" alt=" Title" />
-							<h2>Guest App Walkthrough Screens</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa
-								semper rutrum. In rhoncus eleifend mi id tempus.</p>
-							<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl
-								lectus eget ligula.</p>
+							<h2>Jarinsultana Project</h2>
+							<p>Jarin Sultana is a Family Relationship Advisor & Life Coach. She has completed her B.B.A
+								and M.B.A from Bangladesh University and Business and Technology (BUBT).</p>
 							<a href="https://jarinsultana.com/" class="btn btn-default" target="_blank">View Website</a>
 						</div>
 					</div>
+					<!-- portfolio item -->
+					<!-- <div class="col-md-4 col-sm-6 grid-item raw">
+						<a href="images/works/Portfolio.png" class="work-image">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Raw Coding</span>
+									<h4 class="title">Portfolio Project</h4>
+									<span class="more-button"><i class="icon-magnifier-add"></i></span>
+								</div>
+								<div class="thumb">
+									<img src="images/works/portfolio_thumb.jpg" alt="Portfolio-title" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 grid-item raw">
+						<a href="images/works/Simple.png" class="work-image">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Raw Coding</span>
+									<h4 class="title">Simple Website Project</h4>
+									<span class="more-button"><i class="icon-magnifier-add"></i></span>
+								</div>
+								<div class="thumb">
+									<img src="images/works/simple_thumb.jpg" alt="Portfolio-title" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 grid-item raw">
+						<a href="images/works/Marketo.png" class="work-image">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Raw Coding</span>
+									<h4 class="title">Marketo Project</h4>
+									<span class="more-button"><i class="icon-magnifier-add"></i></span>
+								</div>
+								<div class="thumb">
+									<img src="images/works/marketo_thumb.jpg" alt="Portfolio-title" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div> -->
 
 				</div>
-
+			</div>
+			<!-- more button -->
+			<div class="load-more text-center mt-4">
+				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>
+				<!-- numbered pagination (hidden for infinite scroll) -->
+				<ul class="portfolio-pagination list-inline d-none">
+					<li class="list-inline-item"><a href="works-2.html">2</a></li>
+				</ul>
+			</div>
+			</div>
 		</section>
 
 		<!-- section prices -->
 		<section id="prices">
-
 			<div class="container">
-
 				<!-- section title -->
 				<h2 class="section-title wow fadeIn">Pricing Plans</h2>
 
 				<div class="spacer" data-height="60"></div>
-
-				<div class="row">
-
-					<div class="col-md-4 pr-md-0 mt-md-4 mt-0">
-						<!-- price item -->
-						<div class="price-item bg-white rounded shadow-dark text-center">
-							<img src="images/price-1.svg" alt="Regular" />
-							<h2 class="plan">Basic</h2>
-							<p>A Simple option but powerful to manage your business</p>
-							<p>Email support</p>
-							<h3 class="price"><em>$</em>9<span>Month</span></h3>
-							<a href="#" class="btn btn-default">Get Started</a>
-						</div>
+				<div class="text-center">
+					<div class="nav price-tabs shadow-dark" role="tablist">
+						<a class="nav-link shadow-dark active" href="#personal" role="tab"
+							data-toggle="tab">Personal</a>
+						<a class="nav-link shadow-dark" href="#ecom" role="tab" data-toggle="tab">E-commerce</a>
 					</div>
-
-					<div class="col-md-4 px-md-0 my-4 my-md-0">
-						<!-- price item recommended-->
-						<div class="price-item bg-white rounded shadow-dark text-center best">
-							<span class="badge">Recommended</span>
-							<img src="images/price-2.svg" alt="Premium" />
-							<h2 class="plan">Premium</h2>
-							<p>Unlimited product including apps integrations and more features</p>
-							<p>Mon-Fri support</p>
-							<h3 class="price"><em>$</em>49<span>Month</span></h3>
-							<a href="#" class="btn btn-default">Get Started</a>
-						</div>
-					</div>
-
-					<div class="col-md-4 pl-md-0 mt-md-4 mt-0">
-						<!-- price item -->
-						<div class="price-item bg-white rounded shadow-dark text-center">
-							<img src="images/price-3.svg" alt="Ultimate" />
-							<h2 class="plan">Ultimate</h2>
-							<p>A wise option for large companies and individuals</p>
-							<p>24/7 support</p>
-							<h3 class="price"><em>$</em>99<span>Month</span></h3>
-							<a href="#" class="btn btn-default">Get Started</a>
-						</div>
-					</div>
-
 				</div>
+				<div class="tab-content wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+					<div role="tabpanel" class="tab-pane fade show active" id="personal">
+						<div class="row justify-content-center">
+							<div class="col-md-6 col-lg-6 mb-30">
+								<div class="price-item text-center shadow-dark">
+									<div class="price-top">
+										<h2>Premium</h2>
+										<h2 class="mb-0"><sup>$</sup>25</h2>
+										<span class="text-capitalize">Personal Website</span>
+									</div>
+									<div class="price-content">
+										<ul class="border-bottom mb-30 mt-md-4 pb-3 text-left">
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">Only landing page</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">Design Up tp 5 section</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">Content Upload</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-close mr-2"></i>
+												<span>Responsive Design</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-close mr-2"></i>
+												<span>Contact form validation</span>
+											</li>
+										</ul>
+										<a href="#" class="btn btn-custom">Buy now</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 mb-30">
+								<div class="price-item text-center popular shadow-dark">
+									<div class="price-top">
+										<h2>Business</h2>
+										<h2 class="mb-0"><sup>$</sup>120</h2>
+										<span class="text-capitalize">Business Website</span>
+									</div>
+									<div class="price-content">
+										<ul class="border-bottom mb-30 mt-md-4 pb-3 text-left">
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">Design up to 10 pages</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">1 year Support</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">Content Upload</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-close mr-2"></i>
+												<span>Responsive Design</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-close mr-2"></i>
+												<span>Contact form validation</span>
+											</li>
+										</ul>
+										<a href="#" class="btn btn-custom btn-light">Buy now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="ecom">
+						<div class="row justify-content-center">
+							<div class="col-md-6 col-lg-6 mb-30">
+								<div class="price-item text-center shadow-dark">
+									<div class="price-top">
+										<h2>Startup</h2>
+										<h2 class="mb-0"><sup>$</sup>150</h2>
+										<span class="text-capitalize">E-commerce</span>
+									</div>
+									<div class="price-content">
+										<ul class="border-bottom mb-30 mt-md-4 pb-3 text-left">
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">Build with woocommerce</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-close mr-2"></i>
+												<span> Design upto 10 pages</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">Integrate payment gateway</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">Upload upto 25 product</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-close mr-2"></i>
+												<span>Responsive design</span>
+											</li>
 
+											<li>
+												<i class="zmdi zmdi-close mr-2"></i>
+												<span>Contact form Validation</span>
+											</li>
+										</ul>
+										<a href="#" class="btn btn-custom">Buy now</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 mb-30">
+								<div class="price-item text-center popular shadow-dark">
+									<div class="price-top">
+										<h2>Premium</h2>
+										<h2 class="mb-0"><sup>$</sup>299</h2>
+										<span class="text-capitalize">E-commerce</span>
+									</div>
+									<div class="price-content">
+										<ul class="border-bottom mb-30 mt-md-4 pb-3 text-left">
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">Build with woocommerce</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-close mr-2"></i>
+												<span> Design upto 20 pages</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">Integrate payment gateway</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-check mr-2"></i>
+												<span class="c-black">Upload upto 50 product</span>
+											</li>
+											<li>
+												<i class="zmdi zmdi-close mr-2"></i>
+												<span>Responsive design</span>
+											</li>
+
+											<li>
+												<i class="zmdi zmdi-close mr-2"></i>
+												<span>Contact form Validation</span>
+											</li>
+										</ul>
+										<a href="#" class="btn btn-custom btn-light">Buy now</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
 			</div>
-
 		</section>
-<!-- Team Section -->
+		<!-- Team Section -->
 		<!-- Header -->
 
 		<section id="team">
-			<div class="spacer" data-height="60"></div>
+			<div class="spacer" data-height="20"></div>
 			<!-- section title -->
 			<h2 class="section-title wow fadeIn">Meet My Team</h2>
 
@@ -861,14 +1302,133 @@
 			<div class="container text-center">
 				<div class="row">
 					<!-- Team Member 1 -->
-					<div class="col-xl-4 col-md-6 mb-4">
+					<div class=" col-xl-4 col-md-6 mb-4">
 						<div class="card border-0 rounded shadow">
 							<img src="images/avatar.png" class="card-img-top" alt="...">
 							<div class="card-body text-center">
-								<h5 class="card-title mb-0">Md.Ashraful Islam</h5>
-								<div class="card-text text-black-50">Web Developer</div>
-								<a href="" class="btn btn-default">View profile</a>
+								<h5 class="card-title mb-0">Md.Ariful Islam</h5>
+								<div class="card-text text-black-50">Front End Developer</div>
+								<!-- <a href="https://dev-arifbd.github.io/Portfolio/" class="btn btn-default"
+									target="_blank">View
+									profile</a> -->
+								<button type="button" class="btn btn-default" data-toggle="modal"
+									data-target="#exampleModalCenter2">
+									Read More
+								</button>
 							</div>
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h3 class="modal-title" id="exampleModalLongTitle">About
+												Arif</h3>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<!-- Modal Body Star -->
+										<div class="modal-body">
+											<!-- ======= About Section ======= -->
+											<div class="row text-left">
+												<div class="col-lg-4">
+													<img src="images/avatar.png" class="img-fluid" alt="">
+												</div>
+												<div class="col-lg-8 pt-4 pt-lg-0 content">
+													<h3></h3>
+													<p class="font-italic">Front End Developer at
+														<strong>i2Technologies
+															Limited</strong>
+													</p>
+													<div class="row">
+														<div class="col-lg-6">
+															<ul class="list-group list-group-flush">
+																<li class="list-group-item"><i
+																		class="fas fa-user"></i>&nbsp;
+																	<strong>Name:</strong> Md.Ariful Islam
+
+																</li>
+
+																<li class="list-group-item"><i
+																		class="fas fa-mail-bulk"></i>&nbsp;
+																	<strong>Email:</strong>
+																	<a href="mailto:mdarifulislam3579@gmail.com"
+																		class="customlink" target="_blank">
+																		mdarifulislam3579@gmail.com</a>
+																</li>
+																<li class="list-group-item"><i
+																		class="fas fa-phone-alt"></i>&nbsp;
+																	<strong>Phone:</strong> <a href="tel:"
+																		class="customlink" target="_blank">
+																		+880123456789</a>
+																</li>
+																<li class="list-group-item"><i
+																		class="fas fa-map-marker-alt"></i>&nbsp;
+																	<strong>City:</strong>
+																	Noakhali,Bangladesh
+																</li>
+															</ul>
+														</div>
+														<div class="col-lg-6">
+															<ul class="list-group list-group-flush">
+																<li class="list-group-item"><i
+																		class="fas fa-user-tie"></i>&nbsp;
+																	<strong>Position:</strong> Front End Developer
+																</li>
+																<li class="list-group-item"><i
+																		class="fas fa-building"></i>&nbsp;
+																	<strong>Company:</strong> i2Technologies
+																	Limited
+
+																</li>
+																<li class="list-group-item">
+																	<i
+																		class="fas fa-globe"></i>&nbsp;<strong>Website:</strong><a
+																		href="https://i2technologies.net/"
+																		class="customlink" target="_blank">
+																		https://i2technologies.net/</a>
+																</li>
+																<li class="list-group-item"><i
+																		class="fas fa-code"></i>&nbsp;
+																	<strong>Project:</strong> 137+
+																</li>
+															</ul>
+														</div>
+													</div>
+													<!-- social links -->
+													<ul class="social-icons light list-inline mb-0 mt-4 ml-4">
+														<li data-toggle="tooltip" title="Facebook"
+															class="list-inline-item customlink"><a href="#"><i
+																	class="fab fa-facebook-f"></i></a></li>
+														<li data-toggle="tooltip" title="Twitter"
+															class="list-inline-item customlink"><a href="#"><i
+																	class="fab fa-twitter"></i></a></li>
+														<li data-toggle="tooltip" title="Linkedin"
+															class="list-inline-item customlink"><a href="#"><i
+																	class="fab fa-linkedin-in"></i></a></li>
+														<li data-toggle="tooltip" title="Github"
+															class="list-inline-item customlink"><a href="#"><i
+																	class="fab fa-github"></i></a></li>
+														<li data-toggle="tooltip" title="Stackoverflow"
+															class="list-inline-item customlink"><a href="#"><i
+																	class="fab fa-stack-overflow"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<a data-toggle="tooltip" title="Portfolio"
+												href="https://dev-arifbd.github.io/Portfolio/" class="btn btn-default"
+												target="_blank">View
+												profile</a>
+											<button data-toggle="tooltip" title="Close" type="button"
+												class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Modal End -->
 						</div>
 					</div>
 					<!-- Team Member 2 -->
@@ -876,9 +1436,128 @@
 						<div class="card border-0 rounded shadow">
 							<img src="images/avatar.png" class="card-img-top" alt="...">
 							<div class="card-body text-center">
-								<h5 class="card-title mb-0">Altaf Mahmud</h5>
-								<div class="card-text text-black-50">Web Developer</div>
-								<a href="" class="btn btn-default">View profile</a>
+								<h5 class="card-title mb-0">Md.Ashraful Islam</h5>
+								<div class="card-text text-black-50">Front End Developer</div>
+								<!-- <a href="https://dev-ashrafbd.github.io/Portfolio/" class="btn btn-default"
+									target="_blank">View
+									profile</a> -->
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-default" data-toggle="modal"
+									data-target="#exampleModalCenter">
+									Read More
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+									aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="exampleModalLongTitle">About
+													Ashraf</h3>
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<!-- Modal Body Star -->
+											<div class="modal-body">
+												<!-- ======= About Section ======= -->
+												<div class="row text-left">
+													<div class="col-lg-4">
+														<img src="images/avatar.png" class="img-fluid" alt="">
+													</div>
+													<div class="col-lg-8 pt-4 pt-lg-0 content">
+														<h3></h3>
+														<p class="font-italic">Front End Developer at
+															<strong>i2Technologies
+																Limited</strong>
+														</p>
+														<div class="row">
+															<div class="col-lg-6">
+																<ul class="list-group list-group-flush">
+																	<li class="list-group-item"><i
+																			class="fas fa-user"></i>&nbsp;
+																		<strong>Name:</strong> Mohammad Ashraful Islam
+
+																	</li>
+
+																	<li class="list-group-item"><i
+																			class="fas fa-mail-bulk"></i>&nbsp;
+																		<strong>Email:</strong>
+																		<a href="mailto:ashraful.istiaque@gmail.com"
+																			class="customlink" target="_blank">
+																			ashraful.istiaque@gmail.com</a>
+																	</li>
+																	<li class="list-group-item"><i
+																			class="fas fa-phone-alt"></i>&nbsp;
+																		<strong>Phone:</strong> <a href="tel:"
+																			class="customlink" target="_blank">
+																			+880123456789</a>
+																	</li>
+																	<li class="list-group-item"><i
+																			class="fas fa-map-marker-alt"></i>&nbsp;
+																		<strong>City:</strong>
+																		Noakhali,Bangladesh
+																	</li>
+																</ul>
+															</div>
+															<div class="col-lg-6">
+																<ul class="list-group list-group-flush">
+																	<li class="list-group-item"><i
+																			class="fas fa-user-tie"></i>&nbsp;
+																		<strong>Position:</strong> Front End Developer
+																	</li>
+																	<li class="list-group-item"><i
+																			class="fas fa-building"></i>&nbsp;
+																		<strong>Company:</strong> i2Technologies
+																		Limited
+
+																	</li>
+																	<li class="list-group-item">
+																		<i
+																			class="fas fa-globe"></i>&nbsp;<strong>Website:</strong><a
+																			href="https://i2technologies.net/"
+																			class="customlink" target="_blank">
+																			https://i2technologies.net/</a>
+																	</li>
+																	<li class="list-group-item"><i
+																			class="fas fa-code"></i>&nbsp;
+																		<strong>Project:</strong> 137+
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<!-- social links -->
+														<ul class="social-icons light list-inline mb-0 mt-4 ml-4">
+															<li data-toggle="tooltip" title="Facebook"
+																class="list-inline-item"><a href="#"><i
+																		class="fab fa-facebook-f"></i></a></li>
+															<li data-toggle="tooltip" title="Twitter"
+																class="list-inline-item"><a href="#"><i
+																		class="fab fa-twitter"></i></a></li>
+															<li data-toggle="tooltip" title="Linkedin"
+																class="list-inline-item"><a href="#"><i
+																		class="fab fa-linkedin-in"></i></a></li>
+															<li data-toggle="tooltip" title="Github"
+																class="list-inline-item"><a href="#"><i
+																		class="fab fa-github"></i></a></li>
+															<li data-toggle="tooltip" title="Stackoverflow"
+																class="list-inline-item"><a href="#"><i
+																		class="fab fa-stack-overflow"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+
+												<button data-toggle="tooltip" title="Close" type="button"
+													class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal End -->
 							</div>
 						</div>
 					</div>
@@ -887,178 +1566,221 @@
 						<div class="card border-0 rounded shadow">
 							<img src="images/avatar.png" class="card-img-top" alt="...">
 							<div class="card-body text-center">
-								<h5 class="card-title mb-0">Md.Ariful Islam</h5>
-								<div class="card-text text-black-50">Web Developer</div>
-								<a href="" class="btn btn-default">View profile</a>
+								<h5 class="card-title mb-0">Syed Altaf Mahmud</h5>
+								<div class="card-text text-black-50">Front End Developer</div>
+								<!-- <a href="https://dev-altafbd.github.io/Portfolio/" class="btn btn-default"
+									target="_blank">View
+									profile</a> -->
+								<button type="button" class="btn btn-default" data-toggle="modal"
+									data-target="#exampleModalCenter1">
+									Read More
+								</button>
 							</div>
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h3 class="modal-title" id="exampleModalLongTitle">About
+												Altaf</h3>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<!-- Modal Body Star -->
+										<div class="modal-body">
+											<!-- ======= About Section ======= -->
+											<div class="row text-left">
+												<div class="col-lg-4">
+													<img src="images/avatar.png" class="img-fluid" alt="">
+												</div>
+												<div class="col-lg-8 pt-4 pt-lg-0 content">
+													<h3></h3>
+													<p class="font-italic">Front End Developer at
+														<strong>i2Technologies
+															Limited</strong>
+													</p>
+													<div class="row">
+														<div class="col-lg-6">
+															<ul class="list-group list-group-flush">
+																<li class="list-group-item"><i
+																		class="fas fa-user"></i>&nbsp;
+																	<strong>Name:</strong> Syed Altaf Mahmud
+
+																</li>
+
+																<li class="list-group-item"><i
+																		class="fas fa-mail-bulk"></i>&nbsp;
+																	<strong>Email:</strong>
+																	<a href="mailto:altafmahmud804@gmail.com"
+																		class="customlink" target="_blank">
+																		altafmahmud804@gmail.com</a>
+																</li>
+																<li class="list-group-item"><i
+																		class="fas fa-phone-alt"></i>&nbsp;
+																	<strong>Phone:</strong> <a href="tel:"
+																		class="customlink" target="_blank">
+																		+880123456789</a>
+																</li>
+																<li class="list-group-item"><i
+																		class="fas fa-map-marker-alt"></i>&nbsp;
+																	<strong>City:</strong>
+																	Noakhali,Bangladesh
+																</li>
+															</ul>
+														</div>
+														<div class="col-lg-6">
+															<ul class="list-group list-group-flush">
+																<li class="list-group-item"><i
+																		class="fas fa-user-tie"></i>&nbsp;
+																	<strong>Position:</strong> Front End Developer
+																</li>
+																<li class="list-group-item"><i
+																		class="fas fa-building"></i>&nbsp;
+																	<strong>Company:</strong> i2Technologies
+																	Limited
+
+																</li>
+																<li class="list-group-item">
+																	<i
+																		class="fas fa-globe"></i>&nbsp;<strong>Website:</strong><a
+																		href="https://i2technologies.net/"
+																		class="customlink" target="_blank">
+																		https://i2technologies.net/</a>
+																</li>
+																<li class="list-group-item"><i
+																		class="fas fa-code"></i>&nbsp;
+																	<strong>Project:</strong> 137+
+																</li>
+															</ul>
+														</div>
+													</div>
+													<!-- social links -->
+													<ul class="social-icons light list-inline mb-0 mt-4 ml-4">
+														<li data-toggle="tooltip" title="Facebook"
+															class="list-inline-item"><a href="#"><i
+																	class="fab fa-facebook-f"></i></a></li>
+														<li data-toggle="tooltip" title="Twitter"
+															class="list-inline-item"><a href="#"><i
+																	class="fab fa-twitter"></i></a></li>
+														<li data-toggle="tooltip" title="Linkedin"
+															class="list-inline-item"><a href="#"><i
+																	class="fab fa-linkedin-in"></i></a></li>
+														<li data-toggle="tooltip" title="Github"
+															class="list-inline-item"><a href="#"><i
+																	class="fab fa-github"></i></a></li>
+														<li data-toggle="tooltip" title="Stackoverflow"
+															class="list-inline-item"><a href="#"><i
+																	class="fab fa-stack-overflow"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<a data-toggle="tooltip" title="Portfolio"
+												href="https://dev-altafbd.github.io/Portfolio/" class="btn btn-default"
+												target="_blank">View
+												profile</a>
+											<button data-toggle="tooltip" title="Close" type="button"
+												class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Modal End -->
 						</div>
 					</div>
+					
 					<!-- Team Member 4 -->
-					<!-- <div class="col-xl-3 col-md-6 mb-4">
-					<div class="card border-0 shadow">
-						<img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="...">
-						<div class="card-body text-center">
-							<h5 class="card-title mb-0">Team Member</h5>
-							<div class="card-text text-black-50">Web Developer</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
+					<!-- <div class=" col-xl-3 col-md-6 mb-4">
+												<div class="card border-0 shadow">
+													<img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350"
+														class="card-img-top" alt="...">
+													<div class="card-body text-center">
+														<h5 class="card-title mb-0">Team Member</h5>
+														<div class="card-text text-black-50">Web Developer</div>
+													</div>
+												</div>
+										</div>
+									</div> -->
 					<!-- /.row -->
 
 				</div>
 		</section>
 		<!-- /.container -->
-		<!-- section testimonials -->
-		<section id="testimonials">
 
+		<!-- section testimonials -->
+		<!-- ======= Testimonials Section ======= -->
+		<section id="testimonials" class="testimonials section-bg">
 			<div class="container">
 
-				<!-- section title -->
-				<h2 class="section-title wow fadeInUp">Clients & Reviews</h2>
+				<div class="section-title  wow fadeInUp">
+					<h2>Clients & Reviews</h2>
 
-				<div class="spacer" data-height="60"></div>
 
-				<!-- testimonials wrapper -->
-				<div class="testimonials-wrapper">
+					<div class="owl-carousel testimonials-carousel">
 
-					<!-- testimonial item -->
-					<div class="testimonial-item text-center mx-auto">
-						<div class="thumb mb-3 mx-auto">
-							<img src="images/avatar-3.svg" alt="customer-name" />
+						<div class="testimonial-item data-aos=" fade-up">
+							<p>
+								I enjoy working with the theme and learn so much. You guys make the
+								process
+								fun and interesting. Good luck!
+							</p>
+							<img src="images/avatar-1.svg" class="testimonial-img shadow-dark" alt="">
+							<h3 class="text-center">Saul Goodman</h3>
+							<h4 class="text-center">Ceo &amp; Founder</h4>
 						</div>
-						<h4 class="mt-3 mb-0">John Doe</h4>
-						<span class="subtitle">Product designer at Dribbble</span>
-						<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
-							<p class="mb-0">I enjoy working with the theme and learn so much. You guys make the process
-								fun and interesting. Good luck! 👍</p>
-						</div>
-					</div>
 
-					<!-- testimonial item -->
-					<div class="testimonial-item text-center mx-auto">
-						<div class="thumb mb-3 mx-auto">
-							<img src="images/avatar-1.svg" alt="customer-name" />
+						<div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+							<p>
+								I enjoy working with the theme and learn so much. You guys make the
+								process
+								fun and interesting. Good luck!
+							</p>
+							<img src="images/avatar-2.svg" class="testimonial-img shadow-dark" alt="">
+							<h3 class="text-center">Sara Wilsson</h3>
+							<h4 class="text-center">Designer</h4>
 						</div>
-						<h4 class="mt-3 mb-0">John Doe</h4>
-						<span class="subtitle">Product designer at Dribbble</span>
-						<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
-							<p class="mb-0">I enjoy working with the theme and learn so much. You guys make the process
-								fun and interesting. Good luck! 🔥</p>
-						</div>
-					</div>
 
-					<!-- testimonial item -->
-					<div class="testimonial-item text-center mx-auto">
-						<div class="thumb mb-3 mx-auto">
-							<img src="images/avatar-1.svg" alt="customer-name" />
+						<div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+							<p>
+								I enjoy working with the theme and learn so much. You guys make the
+								process
+								fun and interesting. Good luck!
+							</p>
+							<img src="images/avatar-3.svg" class="testimonial-img shadow-dark" alt="">
+							<h3 class="text-center">Jena Karlis</h3>
+							<h4 class="text-center">Store Owner</h4>
 						</div>
-						<h4 class="mt-3 mb-0">John Doe</h4>
-						<span class="subtitle">Product designer at Dribbble</span>
-						<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
-							<p class="mb-0">I enjoy working with the theme and learn so much. You guys make the process
-								fun and interesting. Good luck! 🔥</p>
-						</div>
-					</div>
 
-					<!-- testimonial item -->
-					<div class="testimonial-item text-center mx-auto">
-						<div class="thumb mb-3 mx-auto">
-							<img src="images/avatar-1.svg" alt="customer-name" />
+						<div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+							<p>
+								I enjoy working with the theme and learn so much. You guys make the
+								process
+								fun and interesting. Good luck!
+							</p>
+							<img src="images/avatar.png" class="testimonial-img shadow-dark" alt="">
+							<h3 class="text-center">Matt Brandon</h3>
+							<h4 class="text-center">Freelancer</h4>
 						</div>
-						<h4 class="mt-3 mb-0">John Doe</h4>
-						<span class="subtitle">Product designer at Dribbble</span>
-						<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
-							<p class="mb-0">I enjoy working with the theme and learn so much. You guys make the process
-								fun and interesting. Good luck! 🔥</p>
-						</div>
-					</div>
 
-					<!-- testimonial item -->
-					<div class="testimonial-item text-center mx-auto">
-						<div class="thumb mb-3 mx-auto">
-							<img src="images/avatar-1.svg" alt="customer-name" />
+						<div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+							<p>
+								I enjoy working with the theme and learn so much. You guys make the
+								process
+								fun and interesting. Good luck!
+							</p>
+							<img src="images/avatar1.png" class="testimonial-img shadow-dark" alt="">
+							<h3 class="text-center">John Larson</h3>
+							<h4 class="text-center">Entrepreneur</h4>
 						</div>
-						<h4 class="mt-3 mb-0">John Doe</h4>
-						<span class="subtitle">Product designer at Dribbble</span>
-						<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
-							<p class="mb-0">I enjoy working with the theme and learn so much. You guys make the process
-								fun and interesting. Good luck! 🔥</p>
-						</div>
+
 					</div>
 
 				</div>
-
-				<div class="row">
-					<div class="col-md-3 col-6">
-						<!-- client item -->
-						<div class="client-item">
-							<div class="inner">
-								<img src="images/client-1.svg" alt="client-name" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<!-- client item -->
-						<div class="client-item">
-							<div class="inner">
-								<img src="images/client-2.svg" alt="client-name" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<!-- client item -->
-						<div class="client-item">
-							<div class="inner">
-								<img src="images/client-3.svg" alt="client-name" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<!-- client item -->
-						<div class="client-item">
-							<div class="inner">
-								<img src="images/client-4.svg" alt="client-name" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<!-- client item -->
-						<div class="client-item">
-							<div class="inner">
-								<img src="images/client-2.svg" alt="client-name" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<!-- client item -->
-						<div class="client-item">
-							<div class="inner">
-								<img src="images/client-6.svg" alt="client-name" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<!-- client item -->
-						<div class="client-item">
-							<div class="inner">
-								<img src="images/client-4.svg" alt="client-name" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<!-- client item -->
-						<div class="client-item">
-							<div class="inner">
-								<img src="images/client-8.svg" alt="client-name" />
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
-
-		</section>
+		</section><!-- End Testimonials Section -->
 
 		<!-- section blog -->
 		<!-- <section id="blog">
@@ -1215,24 +1937,27 @@
 
 				<!-- section title -->
 				<h2 class="section-title wow fadeInUp">Get In Touch</h2>
-
-				<div class="spacer" data-height="60"></div>
-
+				<h3 class="wow fadeInUp">Let's talk about everything!</h3>
+				<div class="spacer" data-height="20"></div>
 				<div class="row">
 
 					<div class="col-md-4">
 						<!-- contact info -->
 						<div class="contact-info">
-							<h3 class="wow fadeInUp">Let's talk about everything!</h3>
+
 							<p class="wow fadeInUp">Don't like forms? Send me an <a
-									href="mailto:name@example.com">email</a>. 👋</p>
+									href="mailto:mdarifulislam3579@gmail.com">email</a>. 👋</p>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.7663111288963!2d91.09459328053327!3d22.86362697928488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUxJzQ4LjkiTiA5McKwMDUnMzkuOCJF!5e1!3m2!1sen!2sbd!4v1626620229827!5m2!1sen!2sbd"
+								width="600" height="450" 269*-+
+								style="border:0;border-radius: 15px; width: 100%; height: 290px;" Class="shadow-dark"
+								allowfullscreen="" loading="lazy"></iframe>
 						</div>
 					</div>
-
 					<div class="col-md-8">
 						<!-- Contact Form -->
-						<form id="contact-form" class="contact-form mt-6" method="post"
-							action="https://jthemes.net/themes/html/bolby/demo/form/contact.php">
+						<form id="contact-form" class="contact-form mt-6" method="post" action="forms/contact.php"
+							class="php-email-form">
 
 							<div class="messages"></div>
 
@@ -1274,11 +1999,44 @@
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
+
 							</div>
 
 							<button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default">Send
-								Message</button><!-- Send Button -->
+								Message</button>
+							<!-- Send Button -->
+							<!-- Button trigger modal -->
+							<!-- <button type="button" class="btn btn-default" data-toggle="modal"
+								data-target="#exampleModal">
+								Send
+								Message
+							</button>-->
 
+						
+							<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Sorry!!!</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											The Message cannot be sent.....<br>
+											Please message in WhatsApp <img
+												src="https://i.ibb.co/N9P0K9H/239px-Whats-App-svg.png" width="45"
+												height="45" />
+										</div>
+										<div class="modal-footer">
+											<button type="button" data-toggle="tooltip" title="Close"
+												class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						 --> 
 						</form>
 						<!-- Contact Form end -->
 					</div>
@@ -1290,12 +2048,17 @@
 		</section>
 
 		<div class="spacer" data-height="96"></div>
+		<!-- <a id="whatsapp" data-toggle="tooltip" data-placement="left" title="Chat With Me"
+			href="https://wa.me/+8801893672619?text=Hi%20Ashraf,%20How%20are%20you%20?" style="text-decoration: none;"
+			target="_blank">
+			<img src="https://i.ibb.co/N9P0K9H/239px-Whats-App-svg.png" width="65" height="65" />
+		</a> --> -->
+
 
 	</main>
 
 	<!-- Go to top button -->
 	<a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
-
 	<!-- SCRIPTS -->
 	<script src="js/jquery-1.12.3.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
@@ -1313,8 +2076,14 @@
 	<script src="js/morphext.min.js"></script>
 	<script src="js/parallax.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/typed.min.js"></script>
 	<script src="js/custom.js"></script>
-
+	<script src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
 </body>
 
 </html>

@@ -13,6 +13,35 @@ $(window).on('load', function() {
         document.getElementsByClassName('infinity')[0].style.display = "block";
     }
 
+      // Hero typed
+      if ($('.typed').length) {
+        var typed_strings = $(".typed").data('typed-items');
+        typed_strings = typed_strings.split(',')
+        new Typed('.typed', {
+          strings: typed_strings,
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 50,
+          backDelay: 2000
+        });
+      };
+      //Review
+      $(".testimonials-carousel").owlCarousel({
+        autoplay: true,
+        dots: true,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          900: {
+            items: 3
+          }
+        }
+      });
     /*=========================================================================
      Wow Initialize
      =========================================================================*/
@@ -146,6 +175,7 @@ $(window).on('load', function() {
     /*=========================================================================
      Infinite Scroll
      =========================================================================*/
+     
     var curPage = 1;
     var pagesNum = $(".portfolio-pagination").find("li a:last").text();   // Number of pages
 
@@ -163,6 +193,7 @@ $(window).on('load', function() {
             selector: '.load-more',
         }
     },
+ 
     // trigger Masonry as a callback
     function( newElements ) {
 
