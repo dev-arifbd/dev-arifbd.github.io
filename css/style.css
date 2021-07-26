@@ -3248,14 +3248,14 @@ body.dark .blog-page-section .blog-single {
 .customlink:hover {
   color: #21dcfe !important;
 }
-/* Whatsapp */
-#whatsapp {
+/* Messenger*/
+.messenger {
   z-index: 4;
   color: #fff;
   margin: 0;
   position: fixed;
-  right: 17px;
-  bottom: 67px;
+  right: 20px;
+  bottom: 75px;
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
   transform: translateY(0px);
