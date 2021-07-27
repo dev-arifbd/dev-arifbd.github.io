@@ -3241,14 +3241,20 @@ body.dark .blog-page-section .blog-single {
     margin-top: 100px;
   }
 }
-/* Custom color for link */
+/*=================================================================*/
+/*                      Custom color for link 
+/*=================================================================*/
+
 .customlink {
   color: #5e5c7f !important;
 }
 .customlink:hover {
   color: #21dcfe !important;
 }
-/* Messenger*/
+/*=================================================================*/
+/*                      Messenger
+/*=================================================================*/
+
 .messenger {
   z-index: 4;
   color: #fff;
@@ -3263,6 +3269,9 @@ body.dark .blog-page-section .blog-single {
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
+/*=================================================================*/
+/*                     Team Section
+/*=================================================================*/
 .neo-button {
   width: 40px;
   height: 40px;
