@@ -3296,3 +3296,18 @@ body.dark .blog-page-section .blog-single {
   box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
 }
 
+#freechatpopup {
+  position: fixed;
+  z-index: 9999999;
+  bottom: 0;
+  margin-bottom: 75px!important;
+  margin-left: 40px!important;
+  margin-right: 10px!important;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 60px);
+}
+span#freechat-icon {
+  width: 70px!important;
+  height: 70px!important;
+}
