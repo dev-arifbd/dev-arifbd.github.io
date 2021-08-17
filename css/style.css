@@ -3295,10 +3295,12 @@ body.dark .blog-page-section .blog-single {
   background: linear-gradient(145deg, #d6d6d6, #ffffff);
   box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
 }
-
+/*=================================================================*/
+/*                     Chat box
+/*=================================================================*/
 #freechatpopup {
   position: fixed;
-  z-index: 9999999;
+  z-index: 1!important;
   bottom: 0;
   margin-bottom: 75px!important;
   margin-left: 40px!important;
