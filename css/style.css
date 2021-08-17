@@ -3313,3 +3313,7 @@ span#freechat-icon {
   width: 70px!important;
   height: 70px!important;
 }
+.freechat-popup-credit {
+  padding: 20px;
+  display: none!important;
+}
