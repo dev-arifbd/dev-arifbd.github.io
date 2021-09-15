@@ -1095,17 +1095,17 @@ section.home.light .social-icons li a:hover {
   overflow: hidden;
 }
 .portfolio-item .thumb img {
-  filter: opacity(0.5);
+  filter: opacity(0.69);
 }
 .portfolio-item .details {
-  color: #fff;
+  color: #21dcfe;
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 1;
 }
 .portfolio-item .details h4 {
-  color: #fff;
+  color: #000;
   font-size: 20px;
   margin: 0 0 10px;
   padding: 0 20px;
@@ -3316,4 +3316,9 @@ span#freechat-icon {
 .freechat-popup-credit {
   padding: 20px;
   display: none!important;
+}
+.project_img{
+
+  display: block; 
+  margin: 0 auto;
 }
