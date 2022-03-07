@@ -2869,7 +2869,7 @@ body.dark .blog-page-section .blog-single {
   font-size: 40px;
   opacity: 1;
 }
-.mfp-close:hover {
+.col-md-4:hover {
   opacity: 0.75;
 }
 
@@ -3321,4 +3321,7 @@ span#freechat-icon {
 
   display: block; 
   margin: 0 auto;
+}
+.loadmore{
+  display:none;
 }

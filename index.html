@@ -9,9 +9,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 
 	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
@@ -21,7 +19,6 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/boxicons.min.css">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-
 
 
 </head>
@@ -306,39 +303,39 @@
 																					Developer</p>
 																				<p class="text-muted font-size-sm">i2
 																					Technologies Limited
-																				<ul
-																					class="social-icons light list-inline mb-0 mt-4 ml-4">
-																					<li data-toggle="tooltip"
-																						title="Facebook"
-																						class="list-inline-item"><a
-																							href="#"><i
-																								class="fab fa-facebook-f"></i></a>
-																					</li>
-																					<li data-toggle="tooltip"
-																						title="Twitter"
-																						class="list-inline-item"><a
-																							href="#"><i
-																								class="fab fa-twitter"></i></a>
-																					</li>
-																					<li data-toggle="tooltip"
-																						title="Linkedin"
-																						class="list-inline-item"><a
-																							href="#"><i
-																								class="fab fa-linkedin-in"></i></a>
-																					</li>
-																					<li data-toggle="tooltip"
-																						title="Github"
-																						class="list-inline-item"><a
-																							href="#"><i
-																								class="fab fa-github"></i></a>
-																					</li>
-																					<li data-toggle="tooltip"
-																						title="Stackoverflow"
-																						class="list-inline-item"><a
-																							href="#"><i
-																								class="fab fa-stack-overflow"></i></a>
-																					</li>
-																				</ul>
+																					<ul
+																						class="social-icons light list-inline mb-0 mt-4 ml-4">
+																						<li data-toggle="tooltip"
+																							title="Facebook"
+																							class="list-inline-item"><a
+																								href="#"><i
+																									class="fab fa-facebook-f"></i></a>
+																						</li>
+																						<li data-toggle="tooltip"
+																							title="Twitter"
+																							class="list-inline-item"><a
+																								href="#"><i
+																									class="fab fa-twitter"></i></a>
+																						</li>
+																						<li data-toggle="tooltip"
+																							title="Linkedin"
+																							class="list-inline-item"><a
+																								href="#"><i
+																									class="fab fa-linkedin-in"></i></a>
+																						</li>
+																						<li data-toggle="tooltip"
+																							title="Github"
+																							class="list-inline-item"><a
+																								href="#"><i
+																									class="fab fa-github"></i></a>
+																						</li>
+																						<li data-toggle="tooltip"
+																							title="Stackoverflow"
+																							class="list-inline-item"><a
+																								href="#"><i
+																									class="fab fa-stack-overflow"></i></a>
+																						</li>
+																					</ul>
 																			</div>
 																		</div>
 																	</div>
@@ -884,7 +881,25 @@
 				<h2 class="section-title wow fadeInUp">Recent works</h2>
 
 				<div class="spacer" data-height="60"></div>
+				<!-- portfolio filter (desktop) -->
+				<ul class="portfolio-filter list-inline wow fadeInUp">
+					<li class="current list-inline-item" data-filter="*">All</li>
+					<li class="list-inline-item" data-filter=".e-commerce">E-commerce</li>
+					<li class="list-inline-item" data-filter=".business">Business</li>
+					<li class="list-inline-item" data-filter=".portfolio">Portfolio</li>
+					<li class="list-inline-item" data-filter=".others">Others</li>
+				</ul>
 
+				<!-- portfolio filter (mobile) -->
+				<div class="pf-filter-wrapper">
+					<select class="portfolio-filter-mobile">
+						<option value="*">All</option>
+						<option value=".e-commerce">E-commerce</option>
+						<option value=".business">Business</option>
+						<option value=".portfolio">Portfolio</option>
+						<option value=".others">Others</option>
+					</select>
+				</div>
 
 				<!-- portolio wrapper -->
 				<div class="row portfolio-wrapper">
@@ -892,12 +907,15 @@
 
 					<!-- portfolio item -->
 					<div class="col-md-4 col-sm-6 grid-item e-commerce">
-						<a href="#small-dialog" class="work-content">
+						<a href="#small-dialog" class="work-content"
+							onclick="document.getElementById('hide-modal').setAttribute('class', 'btn btn-default');">
 							<div class="portfolio-item rounded shadow-dark">
 								<div class="details">
 									<span class="term">E-commerce</span>
 									<h4 class="title">BannatAbaya Project</h4>
-									<span class="more-button"><i class="icon-options"></i></span>
+									<span class="more-button"
+										onclick="document.getElementById('hide-modal').setAttribute('class', 'btn btn-default');"><i
+											class="icon-options"></i></span>
 								</div>
 								<div class="thumb">
 									<img src="images/works/bannatabaya.jpg" alt="Portfolio-title" />
@@ -911,16 +929,21 @@
 							<p>Banaat Abaya & Hijab is an Islamic clothing brand in Bangladesh. It is founded by Jobyda
 								Khanam.</p>
 							<a href="https://banaatabaya.com/" class="btn btn-default" target="_blank">View Website</a>
+							<button id="hide-modal" class=""
+								onclick="document.getElementById('hide-modal').setAttribute('class', 'mfp-close');">Close</button>
 						</div>
 					</div>
 					<!-- portfolio item -->
-					<div class="col-md-4 col-sm-6 grid-item e-commerce">
-						<a href="#small-dialog1" class="work-content">
+					<div class="col-md-4 col-sm-6 grid-item e-commercee">
+						<a href="#small-dialog" class="work-content"
+							onclick="document.getElementById('hide-modal').setAttribute('class', 'btn btn-default');">
 							<div class="portfolio-item rounded shadow-dark">
 								<div class="details">
 									<span class="term">E-commerce</span>
 									<h4 class="title">Mbazar Project</h4>
-									<span class="more-button"><i class="icon-options"></i></span>
+									<span class="more-button"
+										onclick="document.getElementById('hide-modal').setAttribute('class', 'btn btn-default');"><i
+											class="icon-options"></i></span>
 								</div>
 								<div class="thumb">
 									<img src="images/works/mbazar.jpg" alt="Portfolio-title" />
@@ -934,11 +957,15 @@
 							<p>MBAZAR.COM IS THE FASHION FOR EVERYONE FOR EVERY OCCASION.Be it simple, trendy, luxurious
 								or casual, traditional or unique, mbazar.com presents you all</p>
 							<a href="http://live.mbazar.com/" class="btn btn-default" target="_blank">View Website</a>
+							<button id="hide-modal" class=""
+								onclick="document.getElementById('hide-modal').setAttribute('class', 'mfp-close');">Close</button>
 						</div>
 					</div>
+
 					<!-- portfolio item -->
-					<div class="col-md-4 col-sm-6 grid-item e-commerce">
-						<a href="#small-dialog2" class="work-content">
+					<div class="col-md-4 col-sm-6 grid-item e-commerce ">
+						<a href="#small-dialog2" class="work-content"
+							onclick="document.getElementById('hide-modal').setAttribute('class', 'btn btn-default');">
 							<div class="portfolio-item rounded shadow-dark">
 								<div class="details">
 									<span class="term">E-commerce</span>
@@ -959,22 +986,25 @@
 								awe. Partner with us and color your life to the max with Colormax </p>
 							<a href="http://colormaxcosmetics.com/" class="btn btn-default" target="_blank">View
 								Website</a>
+							<button id="hide-modal" class="btn btn-default"
+								onclick="document.getElementById('hide-modal').setAttribute('class', 'mfp-close');">Close</button>
 						</div>
 					</div>
 					<!-- portfolio item -->
 					<div class="col-md-4 col-sm-6 grid-item business">
-						<a href="#small-dialog3" class="work-content">
-							<div class="portfolio-item rounded shadow-dark">
-								<div class="details">
-									<span class="term">Business</span>
-									<h4 class="title">i2Technologies Project</h4>
-									<span class="more-button"><i class="icon-options"></i></span>
-								</div>
-								<div class="thumb">
-									<img src="images/works/i2technologies.jpg" alt="Portfolio-title" />
-									<div class="mask"></div>
-								</div>
+						<a href=" #small-dialog3" class="work-content"
+						onclick="document.getElementById('hide-modal').setAttribute('class', 'btn btn-default');">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">Business</span>
+								<h4 class="title">i2Technologies Project</h4>
+								<span class="more-button"><i class="icon-options"></i></span>
 							</div>
+							<div class="thumb">
+								<img src="images/works/i2technologies.jpg" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
 						</a>
 						<div id="small-dialog3" class="white-popup zoom-anim-dialog mfp-hide">
 							<img class="project_img" src="images/works/i2technologies.jpg"" alt=" Title" />
@@ -984,22 +1014,25 @@
 								user requirement</p>
 							<a href="https://i2technologies.net/" class="btn btn-default" target="_blank">View
 								Website</a>
+							<button id="hide-modal" class="btn btn-default"
+								onclick="document.getElementById('hide-modal').setAttribute('class', 'mfp-close');">Close</button>
 						</div>
 					</div>
 					<!-- portfolio item -->
 					<div class="col-md-4 col-sm-6 grid-item business">
-						<a href="#small-dialog4" class="work-content">
-							<div class="portfolio-item rounded shadow-dark">
-								<div class="details">
-									<span class="term">Business</span>
-									<h4 class="title">i2Hosting Project</h4>
-									<span class="more-button"><i class="icon-options"></i></span>
-								</div>
-								<div class="thumb">
-									<img src="images/works/i2hosting.jpg" alt="Portfolio-title" />
-									<div class="mask"></div>
-								</div>
+						<a href=" #small-dialog4" class="work-content"
+						onclick="document.getElementById('hide-modal').setAttribute('class', 'btn btn-default');">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">Business</span>
+								<h4 class="title">i2Hosting Project</h4>
+								<span class="more-button"><i class="icon-options"></i></span>
 							</div>
+							<div class="thumb">
+								<img src="images/works/i2hosting.jpg" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
 						</a>
 						<div id="small-dialog4" class="white-popup zoom-anim-dialog mfp-hide">
 							<img class="project_img" src="images/works/i2hosting.jpg"" alt=" Title" />
@@ -1011,22 +1044,25 @@
 								businesses..</p>
 							<a href="https://i2hostingsolution.com/" class="btn btn-default" target="_blank">View
 								Website</a>
+							<button id="hide-modal" class="btn btn-default"
+								onclick="document.getElementById('hide-modal').setAttribute('class', 'mfp-close');">Close</button>
 						</div>
 					</div>
 					<!-- portfolio item -->
-					<div class="col-md-4 col-sm-6 grid-item portfolio ">
-						<a href="#small-dialog5" class="work-content">
-							<div class="portfolio-item rounded shadow-dark">
-								<div class="details">
-									<span class="term">Portfolio</span>
-									<h4 class="title">Jarinsultana Project</h4>
-									<span class="more-button"><i class="icon-options"></i></span>
-								</div>
-								<div class="thumb">
-									<img src="images/works/jarinsultana.jpg" alt="Portfolio-title" />
-									<div class="mask"></div>
-								</div>
+					<div class="col-md-4 col-sm-6 grid-item portfolio">
+						<a href=" #small-dialog5" class="work-content"
+						onclick="document.getElementById('hide-modal').setAttribute('class', 'btn btn-default');">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">Portfolio</span>
+								<h4 class="title">Jarinsultana Project</h4>
+								<span class="more-button"><i class="icon-options"></i></span>
 							</div>
+							<div class="thumb">
+								<img src="images/works/jarinsultana.jpg" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
 						</a>
 						<div id="small-dialog5" class="white-popup zoom-anim-dialog mfp-hide">
 							<img class="project_img" src="images/works/jarinsultana.jpg"" alt=" Title" />
@@ -1034,17 +1070,106 @@
 							<p>Jarin Sultana is a Family Relationship Advisor & Life Coach. She has completed her B.B.A
 								and M.B.A from Bangladesh University and Business and Technology (BUBT).</p>
 							<a href="https://jarinsultana.com/" class="btn btn-default" target="_blank">View Website</a>
+							<button id="hide-modal" class="btn btn-default"
+								onclick="document.getElementById('hide-modal').setAttribute('class', 'mfp-close');">Close</button>
+						</div>
+					</div>
+					<!-- portfolio item 7-->
+					<div class="col-md-4 col-sm-6 grid-item business">
+						<a href=" #small-dialog6" class="work-content"
+						onclick="document.getElementById('hide-modal').setAttribute('class', 'btn btn-default');">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">Business</span>
+								<h4 class="title">Next Tech Project</h4>
+								<span class="more-button"><i class="icon-options"></i></span>
+							</div>
+							<div class="thumb">
+								<img src="images/works/next_tech.jpg" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+						</a>
+						<div id="small-dialog6" class="white-popup zoom-anim-dialog mfp-hide">
+							<img class="project_img" src="images/works/next_tech.jpg" alt=" Title" />
+							<h2>Next Tech Project </h2>
+							<p>At Next Tech Ltd we aim to bring you a good quality of life by bringing communities
+								closer through telecommunications.
+								The Next Tech Ltd was developed to fit our customers’ needs,</p>
+							<a href="https://nexttechltd.net/" class="btn btn-default" target="_blank">View Website</a>
+							<button id="hide-modal" class="btn btn-default"
+								onclick="document.getElementById('hide-modal').setAttribute('class', 'mfp-close');">Close</button>
+
+						</div>
+					</div>
+					<!-- portfolio item 8-->
+					<div class="col-md-4 col-sm-6 grid-item others">
+						<a href=" #small-dialog7" class="work-content"
+						onclick="document.getElementById('hide-modal').setAttribute('class', 'btn btn-default');">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">Others</span>
+								<h4 class="title">Tanbir Collection Project</h4>
+								<span class="more-button"><i class="icon-options"></i></span>
+							</div>
+							<div class="thumb">
+								<img src="images/works/tanbhir_collection.jpg" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+						</a>
+						<div id="small-dialog7" class="white-popup zoom-anim-dialog mfp-hide">
+							<img class="project_img" src="images/works/tanbhir_collection.jpg" alt=" Title" />
+							<h2>Tanbir Collection Project</h2>
+							<p>তানভীর কালেকশন আপনাদের জন্য নিয়ে আসছে নিত্য নতুন ও বছরের সেরা কালেকশন। আপনারা আমাদের ওয়েব
+								সাইড ও ফেসবুক পেজের মাধ্যমে বিভিন্ন ধরনের গার্মেন্টস প্রোডাক্ট (ছেলে ও মেয়েদের উওয় পোশাক
+								পাবেন)আমরা সম্মানের সহিত ও বিশ্বাসের অঙ্গিকার বদ্ধ হয়ে দেশের যে কোন জায়গায় কুরিয়ারের
+								মাধ্যমে পাঠিয়ে থাকি ক্যাশ অন ডেলিভারি এবং কন্ডিশন এর উপর নির্ভর করে আপনারা আমাদের কাছ
+								থেকে খুচরা ও পাইকারি ভাবে ক্রয় করতে পারবেন কোন ধরনের ঝুঁকি ছাড়াই।,</p>
+							<a href="https://tanbhircollection.com/" class="btn btn-default" target="_blank">View
+								Website</a>
+							<button id="hide-modal" class="btn btn-default"
+								onclick="document.getElementById('hide-modal').setAttribute('class', 'mfp-close');">Close</button>
+
+						</div>
+					</div>
+					<!-- portfolio item 9-->
+					<div class="col-md-4 col-sm-6 grid-item others">
+						<a href=" #small-dialog8" class="work-content"
+						onclick="document.getElementById('hide-modal').setAttribute('class', 'btn btn-default');">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">Business</span>
+								<h4 class="title">Eleyas_tel Project</h4>
+								<span class="more-button"><i class="icon-options"></i></span>
+							</div>
+							<div class="thumb">
+								<img src="images/works/Eleyas_tel.jpg" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+						</a>
+						<div id="small-dialog8" class="white-popup zoom-anim-dialog mfp-hide">
+							<img class="project_img" src="images/works/Eleyas_tel.jpg" alt=" Title" />
+							<h2>Eleyas_tel Project</h2>
+							<p>ওমান, দুবাই, কাতার, এবং সৌদি আরব সহ কলিং কার্ড পাওয়া যাচ্ছে, যেকোন সময় নিতে পারবেন ।
+								নির্দিস্ট পরিমান ব্যালেন্স নিলেই, কার্ড নিতে পারবেন একদম ফ্রি এবং International Call
+								Quality নিয়ে কোন অভিযোগ থাকলে, আপনার বিক্রয় প্রতিনিদি অথবা আমাদের Email: কিংবা WhatsApp
+								“” এ জানাতে পারেন ।</p>
+							<a href="https://eleyastel.net/" class="btn btn-default" target="_blank">View Website</a>
+							<button id="hide-modal" class="btn btn-default"
+								onclick="document.getElementById('hide-modal').setAttribute('class', 'mfp-close');">Close</button>
+
 						</div>
 					</div>
 
+
+
 				</div>
-			</div>
-			<!-- more button -->
-			<div class="text-center mt-4">
-				<a href="Projects.html" class="btn btn-default"><i class="fas fa-spinner"></i>See All Works</a>
+				
 			</div>
 
-			</div>
+
 		</section>
 
 		<!-- section prices -->
@@ -1520,7 +1645,34 @@
 		<div class="spacer" data-height="96"></div>
 		<!-- chat start -->
 		<script type="text/javascript" src="https://popupsmart.com/freechat.js"></script>
-		<script> window.start.init({ title: "Hi there ✌️", message: "How may I help you? Just send me a message now to get assistance.", color: "#1C86FA", position: "right", placeholder: "Enter your message", withText: "Write with", viaWhatsapp: "Or write us directly via Whatsapp", gty: "Go to your", awu: "and write us", connect: "Connect now", button: "Write me", device: "everywhere", logo: "https://d2r80wdbkwti6l.cloudfront.net/b7LJq5EIX2FD7JLZ4wiGb7qiAcrZGCr0.jpg", person: "https://d2r80wdbkwti6l.cloudfront.net/pcYtrFHzDj27420P1WxJCA9y7Vt76DG3.jpg", services: [{ "name": "whatsapp", "content": "+8801554303516" }, { "name": "messenger", "content": "100043137973290" }, { "name": "mail", "content": "mdarifulislam3579@gmail.com" }] })</script>
+		<script>
+			window.start.init({
+				title: "Hi there ✌️",
+				message: "How may I help you? Just send me a message now to get assistance.",
+				color: "#1C86FA",
+				position: "right",
+				placeholder: "Enter your message",
+				withText: "Write with",
+				viaWhatsapp: "Or write us directly via Whatsapp",
+				gty: "Go to your",
+				awu: "and write us",
+				connect: "Connect now",
+				button: "Write me",
+				device: "everywhere",
+				logo: "https://d2r80wdbkwti6l.cloudfront.net/b7LJq5EIX2FD7JLZ4wiGb7qiAcrZGCr0.jpg",
+				person: "https://d2r80wdbkwti6l.cloudfront.net/pcYtrFHzDj27420P1WxJCA9y7Vt76DG3.jpg",
+				services: [{
+					"name": "whatsapp",
+					"content": "+8801554303516"
+				}, {
+					"name": "messenger",
+					"content": "100043137973290"
+				}, {
+					"name": "mail",
+					"content": "mdarifulislam3579@gmail.com"
+				}]
+			})
+		</script>
 		<!-- chat end -->
 	</main>
 
@@ -1549,8 +1701,9 @@
 	<script type="text/javascript">
 		$(function () {
 			$('[data-toggle="tooltip"]').tooltip()
-		})
+		});
 	</script>
+
 </body>
 
 </html>

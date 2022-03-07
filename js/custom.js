@@ -120,7 +120,7 @@ $(window).on('load', function() {
 
       $('.work-video').magnificPopup({
         type: 'iframe',
-        closeBtnInside: false,
+        closeBtnInside:false,
         iframe: {
             markup: '<div class="mfp-iframe-scaler">'+
                       '<div class="mfp-close"></div>'+
@@ -225,7 +225,7 @@ $(window).on('load', function() {
         setTimeout(function(){
                // hide loading icon
           $( '.load-more .btn i' ).hide();
-        }, 1000);
+        }, 100);
       });
       return false;
     });

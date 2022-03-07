@@ -80,8 +80,9 @@
 .mfp-loading.mfp-figure {
   display: none; }
 
-.mfp-hide {
-  display: none !important; }
+.mfp-hide{
+  display: none !important; 
+}
 
 .mfp-preloader {
   color: #CCC;
@@ -136,7 +137,8 @@ button::-moz-focus-inner {
   color: #FFF;
   font-style: normal;
   font-size: 28px;
-  font-family: Arial, Baskerville, monospace; }
+  font-family: Arial, Baskerville, monospace;
+  display: none!important; }
   .mfp-close:hover,
   .mfp-close:focus {
     opacity: 1; }
