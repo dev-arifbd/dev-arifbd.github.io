@@ -3309,9 +3309,45 @@ body.dark .blog-page-section .blog-single {
   flex-direction: column;
   max-height: calc(100vh - 60px);
 }
+.freechat-popup {
+  width: 100%;
+  min-width: 400px!important;
+  max-width: 450px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 12%);
+  overflow-y: auto;
+}
+.freechat-popup-content {
+  background-color: #fff;
+  padding: 20px 20px 0px!important;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-gap: 10px;
+  align-items: flex-end;
+  max-height: 200px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
 span#freechat-icon {
-  width: 70px!important;
-  height: 70px!important;
+  width: 50px!important;
+  height: 50px!important;
+  padding: 15px!important;
+}
+.freechat-bottom-cta {
+  margin: 0;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: 13px 21px!important;
+  border-radius: 15px;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  transition: .3s ease-in-out;
+  width: 100px;
+  height: 50px;
 }
 .freechat-popup-credit {
   padding: 20px;
