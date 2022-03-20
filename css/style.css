@@ -179,6 +179,13 @@ pre {
   border: 1px solid #ccc;
   border-radius: 0;
 }
+.text-shadow{
+  text-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+}
+.box-shadow{
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+}
+
 
 /*=================================================================*/
 /*                      PRELOADER                              
@@ -1038,6 +1045,20 @@ section.home.light .social-icons li a:hover {
   bottom: 10%;
   right: 10%;
 }
+
+/*=================================================================*/
+/*                      About                              
+/*=================================================================*/
+.about-popup{
+
+  background: #e0e5ec;
+    border-radius: 25px;
+    padding: 30px;
+}
+.list-group-item{
+  background-color: #e0e5ec;
+}
+
 
 /*=================================================================*/
 /*                      SKILLS                              
@@ -2364,7 +2385,7 @@ body.dark .blog-page-section .blog-single {
   background-color: #e0e5ec;
   border-radius: 15px;
   -webkit-box-shadow: none;
-  box-shadow: none;
+   box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001!important;
 }
 
 .progress-bar {
@@ -3334,6 +3355,7 @@ span#freechat-icon {
   width: 50px!important;
   height: 50px!important;
   padding: 15px!important;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
 }
 .freechat-bottom-cta {
   margin: 0;
