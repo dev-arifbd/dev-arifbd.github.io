@@ -1057,6 +1057,7 @@ section.home.light .social-icons li a:hover {
 }
 .list-group-item{
   background-color: #e0e5ec;
+  padding: 0.75rem 0.6rem!important;
 }
 
 
