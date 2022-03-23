@@ -422,7 +422,7 @@ $(function(){
     });
 
 });
-$(document).ready(function(){
+
     
 	$(".grid-item").slice(0, 3).show();
 	$("#showMore").on("click", function(e){
@@ -434,8 +434,6 @@ $(document).ready(function(){
 		} 
 		
 
-
-});
 
 });
 
