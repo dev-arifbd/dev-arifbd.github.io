@@ -422,3 +422,30 @@ $(function(){
     });
 
 });
+$(document).ready(function(){
+    
+	$(".grid-item").slice(0, 3).show();
+	$("#showMore").on("click", function(e){
+  e.preventDefault();
+  $(".grid-item:hidden").slice(0, 3).slideDown();
+  if($(".grid-item:hidden").length == 0) {
+  				$("#showMore").hide();
+				  $("#showLess").show();
+		} 
+		
+
+
+});
+
+});
+
+$("#showLess").on('click', function (e) {
+    e.preventDefault();
+    $(".grid-item:visible").slice(-3).slideUp();
+	if($(".grid-item:visible").length == 6) {
+  				$("#showLess").hide();
+				$("#showMore").show();
+				
+		} 
+
+});

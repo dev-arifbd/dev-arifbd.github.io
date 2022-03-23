@@ -1251,7 +1251,11 @@ select.portfolio-filter-mobile {
   right: 20px;
   color: #000;
 }
-
+.grid-item {
+  display: none;
+  
+  margin-bottom: 25px;
+}
 /*=================================================================*/
 /*                      FACTS                              
 /*=================================================================*/
@@ -3381,6 +3385,4 @@ span#freechat-icon {
   display: block; 
   margin: 0 auto;
 }
-.loadmore{
-  display:none;
-}
+
