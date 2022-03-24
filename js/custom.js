@@ -422,7 +422,9 @@ $(function(){
     });
 
 });
-
+/*=========================================================================
+           Show more and show less
+    =========================================================================*/
     
 	$(".grid-item").slice(0, 3).show();
 	$("#showMore").on("click", function(e){
@@ -432,16 +434,20 @@ $(function(){
   				$("#showMore").hide();
 				  $("#showLess").show();
 		} 
-		
-
-
 });
-
 $("#showLess").on('click', function (e) {
     e.preventDefault();
-    $(".grid-item:visible").slice(-3).slideUp();
-	if($(".grid-item:visible").length == 6) {
-  				$("#showLess").hide();
+    if ($(".grid-item:visible").length % 3 == 1 ) {
+      $(".grid-item:visible").slice(-4).slideUp();
+    } 
+    else if($(".grid-item:visible").length % 3 == 2) {
+      $(".grid-item:visible").slice(-5).slideUp();
+    }
+    else{
+      $(".grid-item:visible").slice(-3).slideUp();
+    }
+   	if($(".grid-item:visible").length <= 6) {
+  			$("#showLess").hide();
 				$("#showMore").show();
 				
 		} 
