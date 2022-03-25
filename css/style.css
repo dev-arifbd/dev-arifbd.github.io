@@ -1343,7 +1343,7 @@ select.portfolio-filter-mobile {
   display: inline-block;
   padding: 7px;
   border-radius: 40px;
-  border: 1px solid #00b5ec;
+  border: 1px solid #21dcfe;
   margin-bottom: 45px;
 }
 
@@ -1354,7 +1354,7 @@ select.portfolio-filter-mobile {
 }
 
 .price-tabs .nav-link {
-  color: #00b5ec;
+  color: #21dcfe;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -1373,7 +1373,7 @@ select.portfolio-filter-mobile {
 }
 
 .price-tabs .nav-link.active {
-  background-color: #00b5ec;
+  background-color: #21dcfe;
   color: #fff;
 }
 
@@ -1396,7 +1396,7 @@ select.portfolio-filter-mobile {
   -webkit-box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
   box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
   padding: 50px 0 25px;
-  background-color: #00b5ec;
+  background-color: #21dcfe;
   border-radius: 10px;
   position: relative;
   z-index: 0;
@@ -1414,7 +1414,7 @@ select.portfolio-filter-mobile {
   height: 50px;
   width: 100%;
   border-radius: 0 0 10px 10px;
-  background-color: #00b5ec;
+  background-color: #21dcfe;
   position: absolute;
   content: "";
   left: 0;
@@ -1485,7 +1485,7 @@ select.portfolio-filter-mobile {
 }
 
 .popular {
-  background-color: #00b5ec;
+  background-color: #21dcfe;
 }
 
 .popular .price-top {
@@ -1503,7 +1503,7 @@ select.portfolio-filter-mobile {
 .popular .price-top h2,
 .popular .price-top span,
 .popular .price-top sup {
-  color: #00b5ec;
+  color: #21dcfe;
 }
 
 .popular .price-content ul *,
