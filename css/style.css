@@ -57,7 +57,6 @@
 ::-webkit-scrollbar-thumb {
   background: #21dcfe;
   border-radius: 10px;
-
 }
 
 /* Handle on hover */
@@ -179,13 +178,15 @@ pre {
   border: 1px solid #ccc;
   border-radius: 0;
 }
-.text-shadow{
+.text-shadow {
   text-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
 }
-.box-shadow{
-  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+.box-shadow {
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
 }
-
 
 /*=================================================================*/
 /*                      PRELOADER                              
@@ -1049,17 +1050,15 @@ section.home.light .social-icons li a:hover {
 /*=================================================================*/
 /*                      About                              
 /*=================================================================*/
-.about-popup{
-
+.about-popup {
   background: #e0e5ec;
-    border-radius: 25px;
-    padding: 30px;
+  border-radius: 25px;
+  padding: 30px;
 }
-.list-group-item{
+.list-group-item {
   background-color: #e0e5ec;
-  padding: 0.75rem 0.6rem!important;
+  padding: 0.75rem 0.6rem !important;
 }
-
 
 /*=================================================================*/
 /*                      SKILLS                              
@@ -2389,7 +2388,10 @@ body.dark .blog-page-section .blog-single {
   background-color: #e0e5ec;
   border-radius: 15px;
   -webkit-box-shadow: none;
-   box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001!important;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001 !important;
 }
 
 .progress-bar {
@@ -3312,31 +3314,38 @@ body.dark .blog-page-section .blog-single {
 .card {
   border-radius: 20px;
   background: #e0e5ec;
-  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;  border: none
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+  border: none;
 }
 
 .card img {
   border-radius: 50%;
   background: linear-gradient(145deg, #d6d6d6, #ffffff);
-  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
 }
 /*=================================================================*/
 /*                     Chat box
 /*=================================================================*/
 #freechatpopup {
   position: fixed;
-  z-index: 1!important;
+  z-index: 1 !important;
   bottom: 0;
-  margin-bottom: 75px!important;
-  margin-left: 40px!important;
-  margin-right: 10px!important;
+  margin-bottom: 75px !important;
+  margin-left: 40px !important;
+  margin-right: 10px !important;
   display: flex;
   flex-direction: column;
   max-height: calc(100vh - 60px);
 }
 .freechat-popup {
   width: 100%;
-  min-width: 400px!important;
+  min-width: 400px !important;
   max-width: 450px;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -3346,7 +3355,7 @@ body.dark .blog-page-section .blog-single {
 }
 .freechat-popup-content {
   background-color: #fff;
-  padding: 20px 20px 0px!important;
+  padding: 20px 20px 0px !important;
   display: grid;
   grid-template-columns: 60px 1fr;
   grid-gap: 10px;
@@ -3356,32 +3365,33 @@ body.dark .blog-page-section .blog-single {
   box-sizing: border-box;
 }
 span#freechat-icon {
-  width: 50px!important;
-  height: 50px!important;
-  padding: 15px!important;
-  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  width: 50px !important;
+  height: 50px !important;
+  padding: 15px !important;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
 }
 .freechat-bottom-cta {
   margin: 0;
   position: absolute;
   background-color: #000;
   color: #fff;
-  padding: 13px 21px!important;
+  padding: 13px 21px !important;
   border-radius: 15px;
   font-size: 14px;
   font-family: Inter;
   font-weight: 400;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   width: 101px;
   height: 50px;
 }
 .freechat-popup-credit {
   padding: 20px;
-  display: none!important;
+  display: none !important;
 }
-.project_img{
-
-  display: block; 
+.project_img {
+  display: block;
   margin: 0 auto;
 }
-
