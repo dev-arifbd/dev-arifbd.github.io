@@ -459,12 +459,9 @@ $("#showLess").on("click", function (e) {
     $(".grid-item:visible").slice(-5).slideUp();
   } else if ($(".grid-item:visible").length % 4 == 2) {
     $(".grid-item:visible").slice(-6).slideUp();
-  } 
-  else if ($(".grid-item:visible").length % 4 == 3) {
+  } else if ($(".grid-item:visible").length % 4 == 3) {
     $(".grid-item:visible").slice(-7).slideUp();
-  } 
-  
-  else {
+  } else {
     $(".grid-item:visible").slice(-4).slideUp();
   }
   if ($(".grid-item:visible").length <= 12) {
