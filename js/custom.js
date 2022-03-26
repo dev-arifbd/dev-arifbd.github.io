@@ -444,10 +444,10 @@ $(function () {
     =========================================================================*/
 
 $("#showLess").hide();
-$(".grid-item").slice(0, 3).show();
+$(".grid-item").slice(0, 4).show();
 $("#showMore").on("click", function (e) {
   e.preventDefault();
-  $(".grid-item:hidden").slice(0, 3).slideDown();
+  $(".grid-item:hidden").slice(0, 4).slideDown();
   if ($(".grid-item:hidden").length == 0) {
     $("#showMore").hide();
     $("#showLess").show();
@@ -455,14 +455,19 @@ $("#showMore").on("click", function (e) {
 });
 $("#showLess").on("click", function (e) {
   e.preventDefault();
-  if ($(".grid-item:visible").length % 3 == 1) {
-    $(".grid-item:visible").slice(-4).slideUp();
-  } else if ($(".grid-item:visible").length % 3 == 2) {
+  if ($(".grid-item:visible").length % 4 == 1) {
     $(".grid-item:visible").slice(-5).slideUp();
-  } else {
-    $(".grid-item:visible").slice(-3).slideUp();
+  } else if ($(".grid-item:visible").length % 4 == 2) {
+    $(".grid-item:visible").slice(-6).slideUp();
+  } 
+  else if ($(".grid-item:visible").length % 4 == 3) {
+    $(".grid-item:visible").slice(-7).slideUp();
+  } 
+  
+  else {
+    $(".grid-item:visible").slice(-4).slideUp();
   }
-  if ($(".grid-item:visible").length <= 6) {
+  if ($(".grid-item:visible").length <= 12) {
     $("#showLess").hide();
     $("#showMore").show();
   }

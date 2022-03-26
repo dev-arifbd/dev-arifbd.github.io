@@ -1127,7 +1127,7 @@ section.home.light .social-icons li a:hover {
 }
 .portfolio-item .details h4 {
   color: #000;
-  font-size: 20px;
+  font-size: 17px;
   margin: 0 0 10px;
   padding: 0 20px;
   opacity: 0;
@@ -1167,13 +1167,13 @@ section.home.light .social-icons li a:hover {
   display: block;
   background: #ffd15c;
   border-radius: 100%;
-  height: 40px;
-  line-height: 42px;
+  height: 35px;
+  line-height: 40px;
   text-align: center;
   position: absolute;
   bottom: 20px;
   left: 20px;
-  width: 40px;
+  width: 35px;
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
